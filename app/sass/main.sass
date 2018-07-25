@@ -1,0 +1,180 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+//customizer sass BEGIN
+.header
+  padding: 40px 0
+.navigation
+  ul
+    padding-right: 0
+    list-style-type: none
+    li
+      margin-left: 20px
+      a
+        color: $text
+
+.title-section
+  text-align: center
+  margin-bottom: 30px
+
+.bac
+  background-image: url("../img/bac.png")
+  background-position: top right
+  background-repeat: no-repeat
+  background-size: 55%
+  min-height: 400px
+  h2
+    font-size: 37px
+    line-height: 1.3
+    margin-bottom: 40px
+  p
+    a
+      margin-left: 5px
+      color: #89bbb9
+      font-weight: bold
+    &:first-letter
+      font-weight: bold
+      font-size: 30px
+      margin-right: 5px
+
+
+#engineering
+  background-image: url("../img/bac-eng.png")
+  background-position: right
+  background-size: auto
+  background-repeat: no-repeat
+  padding-top: 30px
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+#products
+  padding: 50px 0
+  .slider
+    font-size: 0
+    .slick-slide
+      margin: 0 10px
+      .link
+        text-decoration: none
+        position: relative
+        display: inline-block
+        color: #727272
+        font-size: 12px
+        text-align: center
+        width: 255px
+        border: solid 2px #f0f0f0
+        transition: transform 0.3s
+        &:focus
+          outline: 0
+          border-color: #68dbbc
+      .img
+        margin: 5px 0
+        margin-bottom: 70px
+        img
+          margin: 0 auto
+          min-height: 240px
+      .title
+        position: absolute
+        bottom: 0
+        width: 100%
+        border-top: solid 2px #f0f0f0
+        display: block
+        padding: 20px 0
+        margin: 0
+  .arrows
+    margin: 10px 0
+    text-align: center
+    button
+      background: #ffffff
+      border: 0
+      cursor: pointer
+      font-size: 14px
+      padding: 3px
+      color: $text
+      &:focus
+        outline: none
+        color: #000
+
+#development
+  padding: 50px 0
+  background: #68dbbc
+  color: #fff
+  p
+    text-align: center
+    &:first-child
+      margin: 0
+  .block
+    margin-top: 40px
+    text-align: center
+    figure
+      height: 50px
+#contact
+  padding: 50px 0
+  .contact-form
+    input
+      width: 100%
+      margin-bottom: 25px
+      border: solid 2px #e6e6e6
+      border-radius: 5px
+      padding: 5px 15px
+      transition: border-color .3s
+      &:focus
+        outline: none
+        border-color: #68dbbc
+    button
+      width: 100%
+      padding: 5px
+      background: #e6e6e6
+      border-radius: 5px
+      border: 0
+      cursor: pointer
+      transition: all .3s
+      &:focus
+        outline: none
+        box-shadow: 0 0 0 2px #68dbbc
+      &:hover
+        background: #68dbbc
+        color: #fff
+    textarea
+      width: 100%
+      min-height: 160px
+      max-height: 160px
+      border: solid 2px #e6e6e6
+      border-radius: 5px
+      padding: 5px 15px
+      transition: border-color .3s
+      &:focus
+        outline: none
+        border-color: #68dbbc
+  .contact-loc
+    .col
+      text-align: right
+      padding-left: 20px
+      p
+        margin-bottom: 5px
+        line-height: 1.8
+        font-size: 13px
+        strong
+          font-size: 14px
+.footer
+  padding: 20px 0
+  font-size: 14px
+  border-top: solid 1px #e6e6e6
+  .copy
+    color: #837d7d
+    margin-bottom: 0
+  .footer-menu
+    ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+      li
+        text-align: right
+        margin-left: 10px
+        a
+          color: #837d7d
+//customizer sass END
+
+@import "media" // Always at the end
