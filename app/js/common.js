@@ -4,10 +4,16 @@ $(function() {
         dots: false,
         autoplay: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 5,
         centerMode: true,
         arrows: false,
         responsive: [{
+            breakpoint: 1380,
+            settings: {
+                slidesToShow: 4,
+                infinite: true
+            }
+        },{
             breakpoint: 1180,
             settings: {
                 slidesToShow: 3,
